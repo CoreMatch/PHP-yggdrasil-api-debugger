@@ -53,8 +53,8 @@ Known drift from HA-Contract and the live Go service (checked 2026-11-04):
 - script.js:21-22 — texture forms target `PUT|DELETE /api/user/profile/`.
 - script.js:132-139 — texture endpoint path construction with `{uuid}/{textureType}`.
 - index.html:23-24 — the two tabs (HRPAuth API / Zggdrasil API).
-- HA-Contract docs/api/openapi/hrpauth-business.yaml:10 (`/status`), :30 (`/oauth/login-ticket`), :128 (`/register`), :182 (`/user`), :453 (`/email-verification`), :517-524 (`/totp/setup`, `/totp/verify`), :668 (`/change-username`); `/generate-key` absent (verified by search, 0 matches).
+- HA-Contract docs/api/openapi/hrpauth-business.yaml:10 (`/status`), :30 (`/oauth/login-ticket`), :128 (`/register`), :182 (`/user`), :456 (`/email-verification`), :520-527 (`/totp/setup`, `/totp/verify`), :671 (`/change-username`); `/generate-key` absent (verified by search, 0 matches).
 - HA-Contract docs/dev/HRPAuth/yggdrasil-api.md:170-173 — "The standard write endpoints `PUT/DELETE /api/user/profile/:uuid/:textureType` are not exposed directly by the current service implementation."
-- HRPAuth-Yggdrasil-API main.go:147-199 — current route table (meta at `GET /` line 147; texture wrappers at lines 191-192; no `/status` route).
+- HRPAuth-Yggdrasil-API main.go:148-206 — current route table (meta at `GET /` line 148; texture wrappers at lines 198-199; no `/status` route).
 - HA-Contract archive/docs/HRPAuth/endpoints/keygen.md — PHP-era keygen doc, archived.
 - 35893b5bcae77433223dc2659c6f13741eb55da2 "mock version", test-yggdrasil.php — earlier page covered `POST /api/profiles/minecraft` (`testBatchProfiles`) and defaulted to `https://authserver.mojang.com` (lines 5-6).
