@@ -42,10 +42,10 @@ The split of responsibilities, as evidenced by the two repos' contents:
     debugger's Zggdrasil tab and any assumption inherited from the mock.
 
 ## Evidence
-- README.md:3-4 — links to `CoreMatch/PHP-zggdrasil-mock` and `CoreMatch/HRPAuth`.
-- PHP-zggdrasil-mock README.md:3-6 — "A PHP implementation of the next generation Yggdrasil API… a mock server for testing purposes… integrated with HRPAuth… This repository has been archived."
-- PHP-zggdrasil-mock README.md:55-77 — mock endpoint list, matching this repo's Zggdrasil tab one-to-one.
-- script.js:12-22 — this repo's Zggdrasil endpoint set for comparison.
+- README.md (field: CoreMatch/PHP-zggdrasil-mock) — links to `CoreMatch/PHP-zggdrasil-mock` and `CoreMatch/HRPAuth`.
+- /home/lnb/Desktop/HA/PHP-zggdrasil-mock/README.md (field: It is a mock server for testing purposes) — "A PHP implementation of the next generation Yggdrasil API… a mock server for testing purposes… integrated with HRPAuth… This repository has been archived."
+- /home/lnb/Desktop/HA/PHP-zggdrasil-mock/README.md (field: ## API Endpoints) — mock endpoint list, matching this repo's Zggdrasil tab one-to-one.
+- script.js (field: isZgg: true) — this repo's Zggdrasil endpoint set for comparison.
 - 35893b5bcae77433223dc2659c6f13741eb55da2 "mock version" — first code commit of this repo; its `index.php` differs from PHP-zggdrasil-mock `zggdrasilapi/index.php` (current HEAD) only in one comment word ("Yggdrasil" vs "Zggdrasil"), verified by diff.
 - 96a58d4d966a14551e1e1f1c6541163f0909c609 "feat: add API debugger tool with proxy and documentation" — deleted the server-side `index.php` skeleton from this repo.
 - PHP-zggdrasil-mock commits: e3f3c649c16241338c928eb410c524636eca6844 "First release" (2026-04-10) and 2475e9594d96e8283e5ccec900df0ff1c479c005 "final version" (2026-04-10) — developed the same day as this repo's "mock version" commit.
