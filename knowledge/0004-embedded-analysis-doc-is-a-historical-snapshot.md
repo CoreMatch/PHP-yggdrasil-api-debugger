@@ -43,17 +43,17 @@ shipped the current UI.
     that the Go service now implements the surface this tool was built to probe.
 
 ## Evidence
-- api-endpoints-analysis.md:1 — title "HRPAuth 后端 API 端点分析报告".
-- api-endpoints-analysis.md:74 — `/login` routed to `controllers/AuthController@login`.
-- api-endpoints-analysis.md:581-585 — `/generate-key` notes (RSA key pair for Yggdrasil signing, self-disabling endpoint, `signaturePublickey`).
-- api-endpoints-analysis.md:644 — `/authserver/authenticate` routed to `modules/zggdrasilapi/src/auth/authenticate.php`.
-- api-endpoints-analysis.md:1062-1090 — PHP front-controller routing table for the monolith.
+- api-endpoints-analysis.md (field: HRPAuth 后端 API 端点分析报告) — title "HRPAuth 后端 API 端点分析报告".
+- api-endpoints-analysis.md (field: AuthController@login) — `/login` routed to `controllers/AuthController@login`.
+- api-endpoints-analysis.md (field: 此端点用于生成 Yggdrasil API 签名所需的 RSA 密钥对) — `/generate-key` notes (RSA key pair for Yggdrasil signing, self-disabling endpoint, `signaturePublickey`).
+- api-endpoints-analysis.md (field: modules/zggdrasilapi/src/auth/authenticate.php) — `/authserver/authenticate` routed to `modules/zggdrasilapi/src/auth/authenticate.php`.
+- api-endpoints-analysis.md (field: 路由结构) — PHP front-controller routing table for the monolith.
 - 7094ade6e2ebadd5ea6071d53e51f0fb92987ca2 "feat: add unified api debugger and portal interface" (2026-05-05) — added api-endpoints-analysis.md.
 - 96a58d4d966a14551e1e1f1c6541163f0909c609 "feat: add API debugger tool with proxy and documentation" (2026-05-06) — expanded the doc with texture file/DB details; last functional commit.
 - 6442f0920fd70a8ef60405d2b14aec86edd87ed5 "Update README.md" (2026-06-19) — last commit of this repo to date (README link fixes only).
-- HA-Contract README.md:15-17 — "Documentation Center (Single Source of Truth)".
-- HA-Contract README.md:39-41 — old/drifted documents archived and no longer used as development references.
-- HA-Contract README.md:43-45 — all HA-Contract documentation must be written in English.
+- /home/lnb/Desktop/HA/HA-Contract/README.md (field: Documentation Center) — "Documentation Center (Single Source of Truth)".
+- /home/lnb/Desktop/HA/HA-Contract/README.md (field: no longer used as development references) — old/drifted documents archived and no longer used as development references.
+- /home/lnb/Desktop/HA/HA-Contract/README.md (field: must be written in English) — all HA-Contract documentation must be written in English.
 - HA-Contract archive/docs/HRPAuth/endpoints/ — archived PHP-era endpoint docs (auth.md, keygen.md, totp.md, texture.md, yggdrasil.md, etc.).
-- HRPAuth-Yggdrasil-API README.md:5 — current Go service description; README.md:68-73 — its API contract is maintained in HA-Contract.
+- /home/lnb/Desktop/HA/HRPAuth-Yggdrasil-API/README.md (field: Yggdrasil-compatible Minecraft authentication service) — current Go service description; /home/lnb/Desktop/HA/HRPAuth-Yggdrasil-API/README.md (field: The API contract is maintained in) — its API contract is maintained in HA-Contract.
 - HRPAuth-Yggdrasil-API commit 124b2fa1ab42e88e90b227aea9e18465378df0af (2026-11-04) — evidence the Go service is actively developed at the time of writing.

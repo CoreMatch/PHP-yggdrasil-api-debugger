@@ -54,19 +54,19 @@ The tool is a static HTML/JS frontend plus one generic PHP relay:
     server-side inspection is out of scope for this tool.
 
 ## Evidence
-- README.md:1-2 — purpose statement "To debug any yggdrasil-api server".
-- script.js:1-23 — `API_CONFIG` endpoint table (21 entries).
-- script.js:79-112 — Test Connection flow via `proxy.php` (endpoint `/status` at line 91).
-- script.js:118-212 — `makeRequest`: builds per-endpoint bodies, sends everything through `proxy.php`.
-- script.js:265-273 — `displayResponse`: verbatim JSON/Raw rendering only.
-- proxy.php:2-4 — permissive CORS headers (`Access-Control-Allow-Origin: *`).
-- proxy.php:11-15, 23 — request parameters (`api_url`, `method`, `endpoint`, `body`, `accessToken`) and URL joining.
-- proxy.php:32-33 — `CURLOPT_SSL_VERIFYPEER` / `CURLOPT_SSL_VERIFYHOST` set to false.
-- proxy.php:39-41 — optional `Authorization: Bearer` header.
-- proxy.php:43-67 — multipart file upload handling for texture endpoints.
-- proxy.php:88-96 — upstream status code and body passed through.
-- index.html:6, 13 — titles "HRPAuth & Zggdrasil API Debugger" / "HRPAuth & Zggdrasil API Testing Tool".
-- index.html:16-25 — free-form base URL input, Test Connection button, two API tabs.
+- README.md (field: To debug any yggdrasil-api server) — purpose statement "To debug any yggdrasil-api server".
+- script.js::API_CONFIG — `API_CONFIG` endpoint table (21 entries).
+- script.js::setupTestConnection — Test Connection flow via `proxy.php` (endpoint `/status`).
+- script.js::makeRequest — `makeRequest`: builds per-endpoint bodies, sends everything through `proxy.php`.
+- script.js::displayResponse — `displayResponse`: verbatim JSON/Raw rendering only.
+- proxy.php (field: Access-Control-Allow-Origin: *) — permissive CORS headers (`Access-Control-Allow-Origin: *`).
+- proxy.php (field: api_url), proxy.php (field: $fullUrl) — request parameters (`api_url`, `method`, `endpoint`, `body`, `accessToken`) and URL joining.
+- proxy.php (field: CURLOPT_SSL_VERIFYPEER) — `CURLOPT_SSL_VERIFYPEER` / `CURLOPT_SSL_VERIFYHOST` set to false.
+- proxy.php (field: Authorization: Bearer) — optional `Authorization: Bearer` header.
+- proxy.php (field: multipart/form-data) — multipart file upload handling for texture endpoints.
+- proxy.php (field: echo $response) — upstream status code and body passed through.
+- index.html (field: HRPAuth & Zggdrasil API Debugger), index.html (field: HRPAuth & Zggdrasil API Testing Tool) — titles "HRPAuth & Zggdrasil API Debugger" / "HRPAuth & Zggdrasil API Testing Tool".
+- index.html (field: api-url), index.html (field: data-tab="zggdrasil") — free-form base URL input, Test Connection button, two API tabs.
 - Verified absence of JWT/signature/decode logic in script.js (search for jwt/atob/signature/decode finds only form keys for email/TOTP verification).
 - 96a58d4d966a14551e1e1f1c6541163f0909c609 "feat: add API debugger tool with proxy and documentation" — introduced index.html/script.js/styles.css/proxy.php and deleted debugger.php, debugger-api.php, index.php, api-doc.json.
-- 7094ade6e2ebadd5ea6071d53e51f0fb92987ca2 "feat: add unified api debugger and portal interface" — previous generation; its portal described debugger-api.php as handling database queries (7094ade:index.php:11-15).
+- 7094ade6e2ebadd5ea6071d53e51f0fb92987ca2 "feat: add unified api debugger and portal interface" — previous generation; its portal described debugger-api.php as handling database queries (index.php:L11-L15 @ 7094ade6e2ebadd5ea6071d53e51f0fb92987ca2).
