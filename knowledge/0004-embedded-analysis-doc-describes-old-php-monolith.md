@@ -43,6 +43,6 @@ debugger's forms.
 - /home/lnb/Desktop/HA/HA-Contract/README.md (field: Documentation Center) [xref] — "Documentation Center (Single Source of Truth)".
 - /home/lnb/Desktop/HA/HA-Contract/README.md (field: no longer used as development references) [xref] — old/drifted documents archived and no longer used as development references.
 - /home/lnb/Desktop/HA/HA-Contract/README.md (field: must be written in English) [xref] — all HA-Contract documentation must be written in English.
-- /home/lnb/Desktop/HA/HA-Contract/archive/docs/HRPAuth/endpoints/ [xref] — archived PHP-era endpoint docs (auth.md, keygen.md, totp.md, texture.md, yggdrasil.md, etc.).
+- /home/lnb/Desktop/HA/HRPAuth/knowledge/archive/endpoints/ [xref] — archived PHP-era endpoint docs (auth.md, keygen.md, totp.md, texture.md, yggdrasil.md, etc.).
 - /home/lnb/Desktop/HA/HRPAuth-Yggdrasil-API/README.md (field: Yggdrasil-compatible Minecraft authentication service) [xref] — current Go service description.
 - /home/lnb/Desktop/HA/HRPAuth-Yggdrasil-API/README.md (field: The API contract is maintained in) [xref] — the Go service's API contract is maintained in HA-Contract.
